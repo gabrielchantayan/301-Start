@@ -1,0 +1,31 @@
+# INSTALLATION NOTES
+#
+#   1. Copy this file into your systemd service unit directory (often '/lib/systemd/system')
+#      and name it '301.service' with the following command:
+#       cp /opt/301start/301start.systemd /lib/systemd/system/301start.service
+#
+#   2. Edit the new tautulli.service file with configuration settings as required.
+#      More details in the "CONFIGURATION NOTES" section shown below.
+#
+#   3. Enable boot-time autostart with the following commands:
+#       systemctl start 301start.service
+#       systemctl start 301start.service
+#
+#   4. Start now with the following command:
+#       systemctl start 301start.service
+#
+
+[Unit]
+Description=301 Start
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=node /opt/301start/index.js
+Restart=always
+RestartSec=5
+StartLimitInterval=90
+StartLimitBurst=3
+
+[Install]
+WantedBy=multi-user.target

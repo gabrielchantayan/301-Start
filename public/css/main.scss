@@ -1,0 +1,109 @@
+//// COLORS
+
+$fontcolor: #ddd;       // Dark theme
+// $fontcolor: #000;       // Light theme
+// $fontcolor: #839496;    // Solarized Dark
+// $fontcolor: #657b83;    // Solarized Light
+
+
+$fontaccentcolor: darken($fontcolor, 35%);          // Dark theme        
+// $fontaccentcolor: lighten($fontcolor, 35%);         // Light theme
+// $fontaccentcolor: rgb(231, 0, 0);                   // Red
+// $fontaccentcolor: rgb(67, 133, 255);                // Blue
+// $fontaccentcolor: #93a1a1;                          // Solarized Dark
+// $fontaccentcolor: #586e75;                          // Solarized Light
+
+
+// Background color
+$backgroundcolor: invert($fontcolor);    // Dark and Light themes
+// $backgroundcolor: #002b36;               // Solarized Dark
+// $backgroundcolor: #fdf6e3;               // Solarized Light
+
+
+
+//// FONTS
+
+@font-face {
+    font-family: 'IBM Mono';
+    src: url('fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBM Mono';
+    src: url('fonts/IBM_Plex_Mono/IBMPlexMono-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'IBM Mono Light';
+    src: url('fonts/IBM_Plex_Mono/IBMPlexMono-LightItalic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'IBM Sans';
+    src: url('fonts/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBM Sans';
+    src: url('fonts/IBM_Plex_Sans/IBMPlexSans-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+$fontmono: 'IBM Mono', 'Courier New', Courier, monospace;   
+$fontsans: 'IBM Sans', Arial, Helvetica, sans-serif;
+
+$fontsizep: 1em;
+
+body {
+    padding: 4% 25% 5% 10%;
+    background-color: $backgroundcolor;
+    color: $fontcolor;
+}
+
+h1 {
+    font-family: $fontmono;
+    font-size: 2.5em;
+    margin-bottom: 0px; 
+    color: $fontcolor;
+}
+
+h2 {
+    margin: 40px 0px -15px 0px;
+    font-family: $fontmono;
+}
+
+h3 {
+    font-size: 1.125em;
+    font-family: $fontmono;
+    font-weight: normal;
+    font-style: italic;
+    color: $fontaccentcolor;
+    margin: 15px 0px -15px 0px;
+}
+
+p {
+    font-family: $fontsans;
+    font-size: $fontsizep;
+    color: $fontcolor;
+}
+
+a {
+    font-family: $fontsans;
+    font-size: $fontsizep;
+    color: $fontaccentcolor;
+    text-decoration: none;
+}
+
+.third {
+    width: 33%;
+    margin: -20px 0px 0px 0px;
+    padding: 0px;
+    float: left;
+}
+

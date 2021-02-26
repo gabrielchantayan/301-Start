@@ -1,0 +1,18 @@
+<div class="third" id=<%= column %>>
+<% 
+Object.keys(appList[column]).forEach(function (category, i){
+
+    <!-- Print Caregory Name -->
+    %><h2><%= category %></h2><%
+        
+    <!-- Iterate through apps in applist, then print link, name, and description -->
+    for (app in appList[column][category]){
+        %>
+    <h3><a href="<%= appList[column][category][app]["link"] %>"> <%= appList[column][category][app]["name"] %> </a></h3>
+    <p><%= appList[column][category][app]["desc"] %></p>
+    <%
+    }
+});
+
+%>
+</div>

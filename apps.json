@@ -1,0 +1,95 @@
+{
+    "left": {
+        "Entertainment": {
+            "netflix": {
+                "name": "Netflix",
+                "link": "http://netflix.com",
+                "desc": "Watch TV and Movies"
+            },
+            "youtube": {
+                "name": "Youtube",
+                "link": "http://youtube.com",
+                "desc": "Watch videos"
+            }
+        },
+        "Social Media": {
+            "twitter": {
+                "name": "Twitter",
+                "link": "http://twitter.com",
+                "desc": "The godforsaken bird app"
+            },
+            "reddit": {
+                "name": "Reddit",
+                "link": "http://old.reddit.com",
+                "desc": "The frontpage of the internet"
+            },
+            "4chang": {
+                "name": "/g/",
+                "link": "http://4chan.org/g/",
+                "desc": "4chan tech board"
+            }
+        }
+    },
+    "middle": {
+        "Home Media": {
+            "plex": {
+                "name": "Plex",
+                "link": "http://192.168.0.22:32400",
+                "desc": "Your home-grown media library"
+            },
+            "tautulli": {
+                "name": "Tautulli",
+                "link": "http://192.168.0.22:8181",
+                "desc": "Stats for Plex"
+            },
+            "radarr": {
+                "name": "Radarr",
+                "link": "http://192.168.0.22:7878",
+                "desc": "TV Show Aggregator"
+            },
+            "sonarr": {
+                "name": "Sonarr",
+                "link": "http://192.168.0.22:8989",
+                "desc": "Movie Aggregator"
+            }
+        },
+        "Home Server Managment": {
+            "provmox": {
+                "name": "Proxmox",
+                "link": "http://192.168.0.202:8006",
+                "desc": "Proxmox Control Panel"
+            },
+            "pihole": {
+                "name": "PiHole",
+                "link": "http://192.168.0.222",
+                "desc": "Network-wide ad blocker"
+            }
+        }
+    },
+    "right": {
+        "Utility": {
+            "duolingo": {
+                "name": "Duolingo",
+                "link": "http://duolingo.com",
+                "desc": "Learn a language with that godforsaken Green Owl"
+            },
+            "wikipedia": {
+                "name": "Wikipedia",
+                "link": "http://wikipedia.com",
+                "desc": "The free encyclopedia"
+            }
+        },
+        "School": {
+            "myucf": {
+                "name": "MyUCF",
+                "link": "https://my.ucf.edu/psp/IHPROD/EMPLOYEE/EMPL/?cmd=login",
+                "desc": "MyUCF Login page"
+            },
+            "ucfwebcourses": {
+                "name": "UCF Webcourses",
+                "link": "https://webcourses.ucf.edu/",
+                "desc": "Canvas webcourses"
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title><%= $config.name %> </title>
+        <link rel="stylesheet" href="/css/<%= $config.theme %>.css" />
+    </head>
+
+    <body>
+        <h1><%= $config.name %></h1>
+        <%- 
+            include('tab.ejs', { column: "left", appList: appList})
+        %>
+        
+        <%- 
+            include('tab.ejs', { column: "middle", appList: appList})
+        %> 
+
+        <%- 
+            include('tab.ejs', { column: "right", appList: appList})
+        %>
+    </body>
+
+</html>
